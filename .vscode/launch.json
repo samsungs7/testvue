@@ -1,0 +1,27 @@
+{
+    // 使用 IntelliSense 以得知可用的屬性。
+    // 暫留以檢視現有屬性的描述。
+    // 如需詳細資訊，請瀏覽: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Launch Chrome against localhost, with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000", // 前端URL
+            "port": 9222,// Chrome port 後續會設定
+            "sourceMaps": true,//開啟sourceMaps對應模式
+            "userDataDir": "${workspaceRoot}/.vscode/chrome", // 專案目錄的Extension的設定檔路徑
+          
+            "webRoot": "${workspaceRoot}/testvue/"//實體的開發js目錄
+            
+        },
+        {
+            "name": "Launch index.html",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceFolder}/index.html"
+        },
+    ]
+}
